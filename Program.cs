@@ -17,10 +17,9 @@ namespace console_library.Models
 
       Console.WriteLine(library.Name);
       library.PrintBooks();
-      var inthelibrary = false;
+      var inthelibrary = true;
       while (inthelibrary)
       {
-        Console.WriteLine("Welcome to " + library.Name);
         Console.WriteLine("Here are your options:");
         Console.WriteLine("1. Check out a book");
         Console.WriteLine("2. Return a book");
