@@ -10,6 +10,7 @@ namespace console_library.Models
     {
       Name = name;
       Books = new List<Book>();
+
     }
     public void AddBook(Book book)
     {
@@ -23,5 +24,10 @@ namespace console_library.Models
         System.Console.WriteLine($"{i + 1} {Books[i].Title} - {Books[i].Author}");
       }
     }
+    public void Checkout(Book selection)
+    {
+      Books.Add(selection);
+    }
+
   }
 }
