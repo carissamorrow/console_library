@@ -48,6 +48,25 @@ namespace console_library.Models
       targetBook.Available = false;
       Console.WriteLine($"Thanks for Checking out {targetBook.Title}.");
     }
+    public void ReturnBook()
+    {
+      Console.Clear();
+      PrintBooks();
+      System.Console.WriteLine("Thank you for returning the book");
+      string selection = Console.ReadLine();
+      int index;
+      if (Int32.TryParse(selection, out index) == false)
+      {
+        Console.WriteLine("Not a valid choice, enter a valid choice");
+      }
+      Book targetBook = Books[index - 1];
+      if (!targetBook.Available)
+      {
+        targetBook.Available = false;
+        Console.WriteLine($"Thanks for returning {targetBook.Title}.");
+      }
+
+    }
 
   }
 }
