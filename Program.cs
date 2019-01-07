@@ -24,6 +24,7 @@ namespace console_library.Models
         Console.WriteLine("1. Check out a book");
         Console.WriteLine("2. Return a book");
       }
+      inthelibrary = false;
     }
   }
 }
