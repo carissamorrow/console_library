@@ -1,0 +1,11 @@
+C:\Users\Chris\console_library\bin\Debug\netcoreapp2.2\console_library.deps.json
+C:\Users\Chris\console_library\bin\Debug\netcoreapp2.2\console_library.runtimeconfig.json
+C:\Users\Chris\console_library\bin\Debug\netcoreapp2.2\console_library.runtimeconfig.dev.json
+C:\Users\Chris\console_library\bin\Debug\netcoreapp2.2\console_library.dll
+C:\Users\Chris\console_library\bin\Debug\netcoreapp2.2\console_library.pdb
+C:\Users\Chris\console_library\obj\Debug\netcoreapp2.2\console_library.csprojAssemblyReference.cache
+C:\Users\Chris\console_library\obj\Debug\netcoreapp2.2\console_library.csproj.CoreCompileInputs.cache
+C:\Users\Chris\console_library\obj\Debug\netcoreapp2.2\console_library.AssemblyInfoInputs.cache
+C:\Users\Chris\console_library\obj\Debug\netcoreapp2.2\console_library.AssemblyInfo.cs
+C:\Users\Chris\console_library\obj\Debug\netcoreapp2.2\console_library.dll
+C:\Users\Chris\console_library\obj\Debug\netcoreapp2.2\console_library.pdb
