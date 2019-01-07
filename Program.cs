@@ -7,6 +7,7 @@ namespace console_library.Models
   {
     static void Main(string[] args)
     {
+      Console.Clear();
       var library = new Library("Welcome to the Library!");
       Book sidewalk = new Book("Shel Silverstein", "Where the Sidewalk Ends");
       Book thisIsANewBook = new Book("Fake Author", "Fake Title");
@@ -23,10 +24,27 @@ namespace console_library.Models
         Console.WriteLine("Here are your options:");
         Console.WriteLine("1. Check out a book");
         Console.WriteLine("2. Return a book");
-        inthelibrary = false;
+        Console.WriteLine("3. Leave Library");
+        int choice;
+        if (Int32.TryParse(Console.ReadLine(), out choice))
+        {
+          if (choice == 1)
+          {
+            library.Checkout();
+          }
+          else if (choice == 2)
+          {
+            inthelibrary = true;
+          }
+          else if (choice == 3)
+          {
+            inthelibrary = false;
+            Console.Clear();
+            System.Console.WriteLine("Thanks for visiting.");
+          }
+        }
       }
-      string selection = Console.ReadLine();
-      library.Checkout(selection);
+
     }
   }
 }

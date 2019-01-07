@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace console_library.Models
@@ -24,9 +25,28 @@ namespace console_library.Models
         System.Console.WriteLine($"{i + 1} {Books[i].Title} - {Books[i].Author}");
       }
     }
-    public void Checkout(Book selection)
+    public void Checkout()
     {
-      Books.Add(selection);
+      Console.Clear();
+      PrintBooks();
+      System.Console.WriteLine("What book do you want to checkout?");
+      string selection = Console.ReadLine();
+      int index;
+      if (Int32.TryParse(selection, out index) == false)
+      {
+        Console.WriteLine("Not a valid choice, enter a valid choice");
+      }
+      Book targetBook = Books[index - 1];
+      if (targetBook == null)
+      {
+        Console.WriteLine("Not a valid selection");
+      }
+      if (!targetBook.Available)
+      {
+        Console.WriteLine($"{targetBook.Title} is not available, choose another");
+      }
+      targetBook.Available = false;
+      Console.WriteLine($"Thanks for Checking out {targetBook.Title}.");
     }
 
   }
