@@ -23,8 +23,8 @@ namespace console_library.Models
         Console.WriteLine("Here are your options:");
         Console.WriteLine("1. Check out a book");
         Console.WriteLine("2. Return a book");
+        inthelibrary = false;
       }
-      inthelibrary = false;
     }
   }
 }
