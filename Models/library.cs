@@ -10,6 +10,7 @@ namespace console_library.Models
     {
       Name = name;
       Books = new List<Book>();
+      Name = name;
     }
     public void AddBook(Book book)
     {
