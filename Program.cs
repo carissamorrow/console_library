@@ -34,7 +34,7 @@ namespace console_library.Models
           }
           else if (choice == 2)
           {
-            inthelibrary = true;
+            // inthelibrary = true;
           }
           else if (choice == 3)
           {

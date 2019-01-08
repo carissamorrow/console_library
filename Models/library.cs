@@ -62,7 +62,7 @@ namespace console_library.Models
       Book targetBook = Books[index - 1];
       if (!targetBook.Available)
       {
-        targetBook.Available = false;
+        targetBook.Available = true;
         Console.WriteLine($"Thanks for returning {targetBook.Title}.");
       }
 
