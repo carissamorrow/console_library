@@ -63,6 +63,7 @@ namespace console_library.Models
       if (!targetBook.Available)
       {
         targetBook.Available = true;
+        // Checkout.Remove(targetBook);
         Console.WriteLine($"Thanks for returning {targetBook.Title}.");
       }
 
